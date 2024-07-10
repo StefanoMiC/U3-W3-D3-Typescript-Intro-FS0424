@@ -61,18 +61,18 @@ const sayHello = () => {
   return "hello typescript";
 };
 console.log(sayHello().slice(0, 4));
-// sayHello().startsWith("hel"); // metodo più recente della versione usata di default per la compilazione in js es3
+console.log("STARTS WITH", sayHello().startsWith("hel")); // metodo più recente della versione usata di default per la compilazione in js es3
 
-const additionWithChecks = (n1, n2) => {
-  if (typeof n1 === "number" && typeof n2 === "number") {
-    return n1 + n2;
-  } else {
-    return "Devi passare un numero, " + n1 + " e " + n2 + " non sono dei numeri";
-  }
-};
+// const additionWithChecks = (n1, n2) => {
+//   if (typeof n1 === "number" && typeof n2 === "number") {
+//     return n1 + n2;
+//   } else {
+//     return "Devi passare un numero, " + n1 + " e " + n2 + " non sono dei numeri";
+//   }
+// };
 
-console.log(additionWithChecks("2", "3"));
-console.log(additionWithChecks(2, 3));
+// console.log(additionWithChecks("2", "3"));
+// console.log(additionWithChecks(2, 3));
 
 const additionWithTS = (n1: number, n2: number) => {
   return n1 + n2;
